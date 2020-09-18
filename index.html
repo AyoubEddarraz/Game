@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+
+    <!-- Audio victory -->
+
+    <audio src="mp3/victory.mp3" id="sound"></audio>
+
+    <!-- End Audio victory -->
+    
+    <!-- Controller -->
+    <div class="controllePanel">
+        <span id="spanStart">Start</span>
+    </div>
+    <!-- End Controller -->
+
+    <!-- Ask Name -->
+    <div id="containerAskName">
+        <div class="askNmae">
+            <div class="contentAsk">
+                <label for="name">Enter Your name</label>
+                <input type="text" id="name">
+                <span id="spanSendName">Start</span>
+                <h5>Created By Ayoub Eddarraz</h5>
+            </div>
+        </div>
+    </div>
+    <!-- End Ask Name -->
+
+    <!-- Result -->
+    <div class="result">
+        <div class="name">
+            <span id="nameUser"></span>
+        </div>
+        <div class="faild">
+            <span id="failedUser"></span>
+        </div>
+    </div>
+    <!-- End Result -->
+
+    <!-- Timer -->
+    <div class="timer">
+        <span id="time"></span>
+    </div>
+    <!-- End Timer -->
+
+    <!-- Div Game -->
+    <div id="allDivGame">
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Lioness">
+              <div class="face flip-card-front">
+                <img src="img/1.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Lioness">
+              <div class="face flip-card-front">
+                  <img src="img/1.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Parrot">
+              <div class="face flip-card-front">
+                <img src="img/2.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Parrot">
+              <div class="face flip-card-front">
+                <img src="img/2.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Fish">
+              <div class="face flip-card-front">
+                <img src="img/3.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Fish">
+              <div class="face flip-card-front">
+                <img src="img/3.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Dolphin">
+              <div class="face flip-card-front">
+                <img src="img/4.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Dolphin">
+              <div class="face flip-card-front">
+                <img src="img/4.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Elephant">
+              <div class="face flip-card-front">
+                <img src="img/5.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Elephant">
+              <div class="face flip-card-front">
+                <img src="img/5.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Deep">
+              <div class="face flip-card-front">
+                <img src="img/6.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Deep">
+              <div class="face flip-card-front">
+                <img src="img/6.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="cat">
+              <div class="face flip-card-front">
+                <img src="img/7.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="cat">
+              <div class="face flip-card-front">
+                <img src="img/7.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Tortoise">
+              <div class="face flip-card-front">
+                <img src="img/8.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Tortoise">
+              <div class="face flip-card-front">
+                <img src="img/8.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Sheep">
+              <div class="face flip-card-front">
+                <img src="img/9.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="Sheep">
+              <div class="face flip-card-front">
+                <img src="img/9.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="crab">
+              <div class="face flip-card-front">
+                <img src="img/10.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" data-animal="crab">
+              <div class="face flip-card-front">
+                <img src="img/10.jpg" alt="Avatar" draggable="false">
+              </div>
+              <div class="face flip-card-back"></div>
+            </div>
+        </div>
+    </div> 
+    <!-- End Div Game -->
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</body>
+</html>
